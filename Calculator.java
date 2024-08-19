@@ -2,15 +2,16 @@ import java.util.*;
 
 public class calculator {
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter Your Choice = ");
+        Scanner sc = new Scanner(System.in); // Used for User Input
+        System.out.print("Enter Your Choice = \n 1.Add \n 2.Substract \n 3.Multiplication \n 4.Divison \n");
         int Cal = sc.nextInt();
+
         System.out.print("Enter value of a = ");
-        int a = sc.nextInt();
+        int a = sc.nextInt(); 
         System.out.print("Enter value of b = ");
         int b = sc.nextInt();
 
-        switch (Cal) {
+        switch (Cal) { //Switvh case 
             case 1:
                 System.out.println("Addition of two no. is = " + (a + b));
                 break;
